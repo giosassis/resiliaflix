@@ -1,0 +1,20 @@
+.navbar{
+    /*background-color: rgba(0,0,0,0.6);*/
+    background-color: #fff;
+    width: 100%;
+}
+
+#carouselExampleIndicators{
+    position: relative; top: 0; z-index: 1;
+}
+
+.imagem-carrossel{
+    object-fit: cover;
+    object-position: 0 0;
+    height: 630px;
+}
+
+.navbarlogo{
+    font-weight: 700;
+    
+}
