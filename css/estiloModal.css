@@ -1,0 +1,28 @@
+/*mudando fundo do modal*/
+.modal-content{ 
+    background-color: rgba(0, 0, 0, 0.267);
+    color: rgb(255, 255, 255);
+}
+
+/*mudando fundo do cabecalho*/
+.modal-header{
+
+}
+
+/*Titulo Modal*/
+#loginModal{
+    margin-left: 40%;
+    font-weight: bold;
+    color: white;
+}
+/*mudando campo email*/
+#email{
+    background-color: yellow;
+}
+/*mudando campo senha*/
+#Senha{
+background-color: blue;
+}
+.modal-footer{
+    background-color: cornflowerblue;
+}
