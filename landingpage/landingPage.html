@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/landingPage.css">
+    <link rel="stylesheet" href="../css/estiloModal.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bem vindo à Resiliaflix</title>
@@ -14,7 +15,7 @@
 <body>
     <header>
         <!-- NAV BAR -->
-        <nav class="navbar navbar-light bg-transparent d-flex justify-content-between">
+        <nav class="navbar navbar-light bg-transparent d-flex justify-content-between ">
             <article class="navbar-brand h1 fonte-do-texto-cabeçalho mt-1 ml-4"> RESILIAFLIX</article>
             <div class="form-inline my-2 my-lg-0">
                 <button class="btn btn-warning btn-lg mr-4 rounded-0 fonte-do-texto" type="submit" data-toggle="modal"
@@ -99,8 +100,8 @@
                 <div class="card rounded-0">
                     <div class="card-header bg-white" id="headingOne">
                         <h5 class="mb-0">
-                            <button class="btn btn-link text-warning fonte-do-texto " data-toggle="collapse" data-target="#collapseOne"
-                                aria-expanded="true" aria-controls="collapseOne">
+                            <button class="btn btn-link text-warning fonte-do-texto " data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 O que é a Resiliaflix
                             </button>
                         </h5>
@@ -151,8 +152,8 @@
                 <div class="card rounded-0">
                     <div class="card-header bg-white" id="headingFour">
                         <h5 class="mb-0">
-                            <button class="btn btn-link text-warning fonte-do-texto" data-toggle="collapse" data-target="#collapseOne"
-                                aria-expanded="true" aria-controls="collapseOne">
+                            <button class="btn btn-link text-warning fonte-do-texto" data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 Quais conteúdos vocês disponibilizam?
                             </button>
                         </h5>
@@ -168,8 +169,8 @@
                 <div class="card rounded-0">
                     <div class="card-header bg-white" id="headingFive">
                         <h5 class="mb-0">
-                            <button class="btn btn-link text-warning fonte-do-texto" data-toggle="collapse" data-target="#collapseOne"
-                                aria-expanded="true" aria-controls="collapseOne">
+                            <button class="btn btn-link text-warning fonte-do-texto" data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                 É liberado para criança?
                             </button>
                         </h5>
@@ -188,45 +189,62 @@
     </main>
 
     <footer class="cor-de-fundo-rodapé p-3 text-center ">
-        <img src="./imagens/logo rodapé apple.png" alt="Logotipo AppStore" class="mr-2" width="100" height="30" >
+        <img src="./imagens/logo rodapé apple.png" alt="Logotipo AppStore" class="mr-2" width="100" height="30">
         <img src="./imagens/logo rodapé google.png" alt="Logotipo GooglePlay" width="100" height="30">
     </footer>
 
     <!-- Modal Marcos Paulo -->
+    <!-- LOGIN MODAL-->
     <div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+    aria-hidden="true">
+     <div class="modal-dialog modal-sm ">
+          <div class="modal-content">
+            <div class="modal-header d-flex justify-content-center">
+              <h5 class="modal-title " id="loginModal">Login</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body p-0">
+              <form  name="f1" class="p-3">
+                <div class="form-group">
+                  <label for="user-email">Email </label>
+                  <input id="email" type="email" name="email" required class="form-control" id="email" placeholder="Digite seu e-mail" aria-describedby="email">
                 </div>
-                <div class="modal-body">
-                    MARCOS PAULO CABRAL
+  
+                <div class="form-group">
+                  <label for="Senha">Senha</label>
+                  <input type="password" required class="form-control" id="Senha">
+                  <small  class="form-text text-muted mb-3"> <a href="passwordReset.html"> Recuperar Senha </a></small>
+                  <div class="form-group form-check m-1">
+                    <input type="checkbox" class="form-check-input" id="rememberMe">
+                    <label class="form-check-label" for="Lembrar">Lembrar Login</label>
+                  </div>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                <button  class="btn enter-btn" id="btnLogin"  >Entrar</button>
+            </form>
+              <div class="modal-footer d-flex justify-content-center">
+                  <p> ResiliaFlix</p>
                 </div>
             </div>
+          </div>
         </div>
-    </div>
+      </div>
+   
 
     <!-- Fim do modal Marcos Paulo -->
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
         </script>
     <script src="../páginas html - giovana/js/"></script>
-
+    <script src="../js/main.js"></script>
+    
 </body>
 
 </html>
