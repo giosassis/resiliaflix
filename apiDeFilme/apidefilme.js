@@ -10,17 +10,16 @@ function mostrarFilme(movie) {
         success: function(dados) {
             console.log(dados)
             document.getElementById('imagemdofilme').src = dados.Poster;
-            document.getElementById('titlemovie').innerText+=dados.Title;
-            document.getElementById('director').innerText+=dados.Director;
-            document.getElementById('year').innerText+=dados.Year;
-            document.getElementById('released').innerText+=dados.Released;
-            document.getElementById('runtime').innerText+=dados.Runtime;
-            document.getElementById('genre').innerText+=dados.Genre;
-            document.getElementById('plot').innerText+=dados.Plot;
-            document.getElementById('imdbRating').innerText+=dados.imdbRating;
-    
+            document.getElementById('titlemovie').innerHtml = dados.Title;
+            document.getElementById('director').innerHTML=`Diretor: ${dados.Director}`;
+            document.getElementById('year').innerHTML=`Ano: ${dados.Year}`;
+            document.getElementById('released').innerHTML=`Data de Lançamento: ${dados.Released}`;
+            document.getElementById('runtime').innerHTML=`Tempo de Duração: ${dados.Runtime}`;
+            document.getElementById('genre').innerHTML=`Gênero: ${dados.Genre}`;
+            document.getElementById('plot').innerHTML= `Sinopse: ${dados.Plot}`;
+            document.getElementById('imdbRating').innerHTML= `Avaliação IMDb: ${dados.imdbRating}`;
         }
-    })
+    });
 }
 
 $('#botao-enviar').click(function (evento) {
