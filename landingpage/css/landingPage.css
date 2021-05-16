@@ -49,6 +49,10 @@ body {
   border-color: #f2b544;
 }
 
+.cor-de-fundo-modal{
+  background-color: #f2b544 !important;
+}
+
 .margen-top{
   margin-top: 70px;
 }
