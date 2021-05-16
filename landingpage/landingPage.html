@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/landingPage.css">
+    <link rel="stylesheet" href="../css/estiloModal.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem vindo à Resiliaflix</title>
+</head>
+
+<body>
+    <header>
+        <!-- NAV BAR -->
+        <nav class="navbar navbar-light bg-transparent d-flex justify-content-between ">
+            <article class="navbar-brand h1 fonte-do-texto-cabeçalho mt-1 ml-4"> RESILIAFLIX</article>
+            <div class="form-inline my-2 my-lg-0">
+                <button class="btn btn-warning btn-lg mr-4 rounded-0 fonte-do-texto" type="submit" data-toggle="modal"
+                    data-target="#modal-login">Entrar</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container text-center text-white mt-4 p-5">
+
+        <section class="conteudo-escrito">
+            <div>
+                <h1 class="fonte-do-texto mb-5"> Junte-se a nós e mude o seu conceito de filmes, séries e diversão.
+                </h1>
+            </div>
+            <div>
+                <h2 class="fonte-do-texto ">Assista onde quiser, quando quiser e sem nenhum custo por isso</h2>
+            </div>
+            <div>
+                <div mt->
+                    <h5 class="fonte-do-texto mt-5">Se interessou? Comece o seu cadastro agora digitando o seu email
+                        abaixo:
+                    </h5>
+                </div>
+                <form class="form-inline justify-content-center fonte-do-texto p-3">
+                    <div class="input-group justify-content-center">
+                        <input type="email" class="form-control tamanho-input-email rounded-0 justify-content-center"
+                            placeholder="seuemail@exemplo.com">
+                        <div class=" input-group-btn">
+                            <button type=" submit" class="btn bg-warning tamanho-botao rounded-0 ml-1" required> <a
+                                    class="formatar-ancora" href="http://"> Venha Comigo </a></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!--CARDS-->
+        <h4 class="margen-top p-0 text-center fs-1 fonte-do-texto">Por que se cadastrar na ResiliaFlix? </h4>
+        <section class="card-group mt-5 ">
+            <article class="card border-warning m-4 p-0">
+                <img src="./imagens/card page 1.jpg" class="card-img-top card-posicao-imagem" alt="Imagem Card 1">
+                <div class="card-body">
+                    <h5 class="card-title text-dark fonte-do-texto"> É grátis!</h5>
+                    <p class="card-text text-dark fw-normal"> A plataforma é desenvolvida por cinco estudantes de
+                        programação
+                        com o desejo
+                        de aprender e a sua única contribuição pode ser uma doação no valor que seu coração desejar.
+                    </p>
+                </div>
+            </article>
+
+            <article class="card border-warning m-4 p-0">
+                <img src="./imagens/card page 2.jpg" class="card-img-top card-posicao-imagem" alt="Cartaz do filme">
+                <div class="card-body">
+                    <h5 class="card-title text-dark fonte-do-texto"> Grandes clássicos disponíveis!</h5>
+                    <p class="card-text text-dark fw-normal"> Sabe aquele filme que você procura em todo canto e não
+                        acha?
+                        Pode ter certeza
+                        que a Resiliaflix vai resolver o seu problema. Cola com a gente que é sucesso. </p>
+                </div>
+            </article>
+
+            <article class="card border-warning m-4 p-0">
+                <img src="./imagens/card page 3.jpg" class="card-img-top card-posicao-imagem" alt="Card imagem 3">
+                <div class="card-body">
+                    <h5 class="card-title text-dark fonte-do-texto"> Assista onde, quando e quantas vezes quiser 🥳</h5>
+                    <p class="card-text text-dark fw-normal"> Em casa, na rua, no quarto ou na sala, a Resiliaflix está
+                        disponível em todas
+                        as plataformas web e mobile, há opção para download e assistir offline e sem limite de
+                        repetição. Não é massa? 😄 </p>
+                </div>
+            </article>
+        </section>
+        <!--FIM DOS CARDS-->
+
+        <section class="faq-perguntas-recentes">
+            <!--PERGUNTAS FREQUENTES-->
+            <h3 class="text-center mt-5 mb-5 fonte-do-texto">PERGUNTAS FREQUENTES</h3>
+
+            <div class="largura-acordeon justify-content-center" id="accordion">
+                <div class="card rounded-0">
+                    <div class="card-header bg-white" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link text-warning fonte-do-texto " data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                O que é a Resiliaflix
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body text-dark fw-normal">
+                            A ResiliaFlix nasceu de uma ideia de cinco amigos estudantes de programação, com o objetivo
+                            de facilitar o acesso ao cinema, entretenimento e diversão por baixo custo e fácil
+                            acessibilidade.
+                        </div>
+                    </div>
+                </div>
+                <div class="card rounded-0">
+                    <div class="card-header bg-white" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed text-warning fonte-do-texto" data-toggle="collapse"
+                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                A Resiliaflix é grátis?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body text-dark fw-normal">
+                            Parece mentira, mas não é. A ResiliaFlix é TOTALMENTE GRATUITA! A única coisa que pedimos é
+                            uma contribuiçao para ajuda de custo, mas não é obrigatória e nem um valor fixo, você pode
+                            doar a gente com o quanto o seu coração quiser, e o seu bolso puder.
+                        </div>
+                    </div>
+                </div>
+                <div class="card rounded-0">
+                    <div class="card-header bg-white" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed text-warning fonte-do-texto" data-toggle="collapse"
+                                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Posso usar no meu celular?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body text-dark fw-normal">
+                            Celular, tablet, televisão, notebook e qualquer outro aparelho eletrônico com conexão wi-fi.
+                            A ResiliaFlix está disponível na web, na AppleStore e GooglePlay, e além de tudo isso, está
+                            desenvolvendo a aplicação para televisão.
+                        </div>
+                    </div>
+                </div>
+                <div class="card rounded-0">
+                    <div class="card-header bg-white" id="headingFour">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link text-warning fonte-do-texto" data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Quais conteúdos vocês disponibilizam?
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingFour" data-parent="#accordion">
+                        <div class="card-body text-dark fw-normal">
+                            De tudo um pouco. Ou muito! O catálogo da netflix engloba séries, filmes, documentários,
+                            animações, animes, doramas e qualquer conteúdo audiovisual que você possa imaginar.
+                        </div>
+                    </div>
+                </div>
+                <div class="card rounded-0">
+                    <div class="card-header bg-white" id="headingFive">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link text-warning fonte-do-texto" data-toggle="collapse"
+                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                É liberado para criança?
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingFive" data-parent="#accordion">
+                        <div class="card-body text-dark">
+                            Com certeza! Temos seção especial para as crianças com desenhos educativos, divertidos e que
+                            com certeza trará uma alegria para a garotada.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--FIM PERGUNTAS FREQUENTES-->
+        </section>
+    </main>
+
+    <footer class="cor-de-fundo-rodapé p-3 text-center ">
+        <img src="./imagens/logo rodapé apple.png" alt="Logotipo AppStore" class="mr-2" width="100" height="30">
+        <img src="./imagens/logo rodapé google.png" alt="Logotipo GooglePlay" width="100" height="30">
+    </footer>
+
+    <!-- Modal Marcos Paulo -->
+    <!-- LOGIN MODAL-->
+    <div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+     <div class="modal-dialog modal-sm ">
+          <div class="modal-content">
+            <div class="modal-header d-flex justify-content-center">
+              <h5 class="modal-title " id="loginModal">Login</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body p-0">
+              <form  name="f1" class="p-3">
+                <div class="form-group">
+                  <label for="user-email">Email </label>
+                  <input id="email" type="email" name="email" required class="form-control" id="email" placeholder="Digite seu e-mail" aria-describedby="email">
+                </div>
+  
+                <div class="form-group">
+                  <label for="Senha">Senha</label>
+                  <input type="password" required class="form-control" id="Senha">
+                  <small  class="form-text text-muted mb-3"> <a href="passwordReset.html"> Recuperar Senha </a></small>
+                  <div class="form-group form-check m-1">
+                    <input type="checkbox" class="form-check-input" id="rememberMe">
+                    <label class="form-check-label" for="Lembrar">Lembrar Login</label>
+                  </div>
+                </div>
+                <button  class="btn enter-btn" id="btnLogin"  >Entrar</button>
+            </form>
+              <div class="modal-footer d-flex justify-content-center">
+                  <p> ResiliaFlix</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+
+    <!-- Fim do modal Marcos Paulo -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+    integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
+        </script>
+    <script src="../páginas html - giovana/js/"></script>
+    <script src="../js/main.js"></script>
+    
+</body>
+
+</html>

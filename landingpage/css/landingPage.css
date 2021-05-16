@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../imagens/background-image.png);
+}
+
+.fonte-do-texto {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600; 
+}
+
+.fonte-do-texto-cabeçalho {
+  font-family: "Bebas Neue", cursive;
+  color: #f2b544 !important;
+  font-size: 40px;
+}
+.tamanho-input-email {
+  width: 500px !important;
+  height: 50px;
+}
+.tamanho-botao {
+  width: 113;
+  height: 50px;
+}
+
+.formatar-ancora {
+  text-decoration: none;
+  color: #000;
+}
+
+.formatar-ancora:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+.card-posicao-imagem {
+  object-fit: cover;
+  height: 200px;
+}
+
+.cor-da-borda {
+  border-color: #f2b544;
+}
+
+.margen-top{
+  margin-top: 70px;
+}
+
+.card-largura {
+  max-width: 50px;
+}
+
+.cor-de-fundo-rodapé{
+  background-color: rgba(0, 0, 0, 0.6);
+}
