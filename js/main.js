@@ -1,3 +1,6 @@
+$(window).scroll(function () {//mudar a navbar ao scrollar
+	$('nav').toggleClass('scrolled', $(this).scrollTop() > 100);
+})
 let $ = document.querySelector.bind(document);
 let buttonLogin = $("#btnLogin");
 let email = $("#email");
@@ -17,6 +20,3 @@ buttonLogin.addEventListener("click", (event) => {
 	console.log(senha.values)	
 	
 });
-$(window).scroll(function () {//mudar a navbar ao scrollar
-    $('nav').toggleClass('scrolled', $(this).scrollTop() > 100);
-})
