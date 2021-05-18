@@ -1,7 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap");
+
 .navbar{
    
     width: 100%;
 }
+
+.tamanho-botao {
+    width: 113;
+    height: 50px;
+}
+
+.fonte-do-texto {
+    font-family: "Bebas Neue", cursive;
+    color: #f2b544 !important;
+    font-size: 40px;
+}
+
+.fonte-nav-bar{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600; 
+    color: #fff !important;
+}
+
+.imagem-carrossel {
+    object-fit: cover;
+    height: 600px;
+  }
 /*classe controladora do navbar*/
 .bg{
     background-color: rgba(255, 255, 255, 0);
@@ -10,17 +35,15 @@
     background-color: rgba(0, 0, 0, 0.527);
 }
 
+.navbarlogo{
+    font-weight: 700;
+}
+
 #carouselExampleIndicators{
     position: relative; top: 0; z-index: 1;
 }
 
-.imagem-carrossel{
-    object-fit: cover;
-    object-position: 0 0;
-    height: 630px;
+body{
+    background-color: black;
 }
 
-.navbarlogo{
-    font-weight: 700;
-    
-}
