@@ -58,9 +58,9 @@
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                    <input class="rounded-0  form-control mr-sm-2 fonte-nav-bar" id="inputApi" type="search"
+                    <input class="rounded-0  form-control mr-sm-2 fonte-nav-bar" id="movie" type="search"
                         placeholder="Pesquise aqui" aria-label="Search">
-                    <button class="rounded-0 btn btn-warning my-2 my-sm-0 fonte-nav-bar text-dark" type="submit">
+                    <button class="rounded-0 btn btn-warning my-2 my-sm-0 fonte-nav-bar text-dark" id="botao-enviar">
                         Pesquisar </button>
                 </form>
             </div>
@@ -75,19 +75,19 @@
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="d-block w-100 imagem-carrossel" src="./imagens/poster 1.jpg" alt="First slide">
+                                <img class="d-block w-100 imagem-carrossel" src="./imagens/poster 1.jpg" alt="First slide" onclick="mostrarFilme('tt1979376')"> 
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100 imagem-carrossel" src="./imagens/poster 2.jpg" alt="Second slide">
+                                <img class="d-block w-100 imagem-carrossel" src="./imagens/poster 2.jpg" alt="Second slide" onclick="mostrarFilme('tt6751668')">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100 imagem-carrossel" src="./imagens/poster 3.jpg" alt="Third slide">
+                                <img class="d-block w-100 imagem-carrossel" src="./imagens/poster 3.jpg" alt="Third slide"onclick="mostrarFilme('tt6857112')">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100 imagem-carrossel" src="./imagens/posterbastardos.png" alt="Fourth slide">
+                                <img class="d-block w-100 imagem-carrossel" src="./imagens/posterbastardos.png" alt="Fourth slide"onclick="mostrarFilme('tt0361748')">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100 imagem-carrossel" src="./imagens/poster5.jpg" alt="Fourth slide">
+                                <img class="d-block w-100 imagem-carrossel" src="./imagens/poster5.jpg" alt="Fourth slide"onclick="mostrarFilme('tt2582802')">
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -103,7 +103,6 @@
             </div>
         </section>
     </main>
-
     <main class="catalogo-de-filme">
         <h3 class="mt-5 tb-5 d-flex justify-content-center fonte-nav-bar text-white"> Navegue no nosso catálogo </h3>
 
