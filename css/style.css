@@ -1,49 +1,69 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap");
 
-.navbar{
-   
-    width: 100%;
+.navbar {
+  width: 100%;
 }
 
 .tamanho-botao {
-    width: 113;
-    height: 50px;
+  width: 113;
+  height: 50px;
 }
 
 .fonte-do-texto {
-    font-family: "Bebas Neue", cursive;
-    color: #f2b544 !important;
-    font-size: 40px;
+  font-family: "Bebas Neue", cursive;
+  color: #f2b544 !important;
+  font-size: 40px;
 }
 
-.fonte-nav-bar{
-    font-family: "Poppins", sans-serif;
-    font-weight: 600; 
-    color: #fff !important;
+.fonte-nav-bar {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #fff !important;
 }
 
 .imagem-carrossel {
-    object-fit: cover;
-    height: 600px;
-  }
+  object-fit: cover;
+  object-position: 0 35%;
+  height: 500px;
+}
 /*classe controladora do navbar*/
-.bg{
-    background-color: rgba(255, 255, 255, 0);
+.bg {
+  background-color: rgba(255, 255, 255, 0);
 }
-.bg.scrolled{
-    background-color: rgba(0, 0, 0, 0.527);
-}
-
-.navbarlogo{
-    font-weight: 700;
+.bg.scrolled {
+  background-color: rgba(0, 0, 0, 0.527);
 }
 
-#carouselExampleIndicators{
-    position: relative; top: 0; z-index: 1;
+.navbarlogo {
+  font-weight: 700;
 }
 
-body{
-    background-color: black;
+#carouselExampleIndicators {
+  position: relative;
+  top: 0;
+  z-index: 1;
 }
 
+body {
+  background-color: black;
+}
+/* CSS dos cards do catálogo*/
+#desktopView {
+  display: inline !important;
+}
+.moviesSelect {
+  background-color: #131313;
+}
+.movielist {
+  color: #ffc810;
+}
+.img-sizing {
+  object-fit: cover;
+  width: 100%;
+  margin: 5px;
+}
+
+.img-sizing:hover {
+  transform: scale(115%);
+}
