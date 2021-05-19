@@ -1,3 +1,4 @@
+
 let $ = document.querySelector.bind(document);
 let buttonLogin = $("#btnLogin");
 let email = $("#email");
@@ -13,10 +14,5 @@ buttonLogin.addEventListener("click", (event) => {
 	if (!vEmail(email.value) && senha.value.length < 4) alert("email e Senha errados");
     else if(!vEmail(email.value) && senha.value.length>3) alert("Email errado");
     else if(vEmail(email.value) && senha.value.length<4) alert("Senha errada");
-    else window.open("../index.html", "_self");
-	console.log(senha.values)	
-	
-});
-$(window).scroll(function () {//mudar a navbar ao scrollar
-    $('nav').toggleClass('scrolled', $(this).scrollTop() > 100);
+    else window.open("./index.html", "_self");
 });
