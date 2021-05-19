@@ -21,6 +21,11 @@ body {
   color: #f2b544 !important;
   font-size: 40px;
 }
+
+.texto-body{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600; 
+}
 .tamanho-input-email {
   width: 500px !important;
   height: 50px;
@@ -47,6 +52,10 @@ body {
 
 .cor-da-borda {
   border-color: #f2b544;
+}
+
+.cor-de-fundo-modal{
+  background-color: #f2b544 !important;
 }
 
 .margen-top{

@@ -1,30 +1,18 @@
-/*mudando fundo do modal*/
-.modal-content{ 
-    background-color: rgba(0, 0, 0, 0.267);
-    color: rgb(255, 255, 255);
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap");
 
 /*mudando fundo do cabecalho*/
-.modal-header{
-
+.modal-fonte{
+font-family: "Poppins", sans-serif;
+  font-weight: 600; 
 }
 
-/*Titulo Modal*/
-#loginModal{
-    margin-left: 40%;
-    font-weight: bold;
-    color: white;
+.cor-modal{
+    background-color:#f2b544;
 }
-/*mudando campo email*/
-#email{
-    background-color: yellow;
-}
-/*mudando campo senha*/
-#Senha{
-background-color: blue;
-}
-.modal-footer{
-    background-color: cornflowerblue;
-}
+
+.formatar-ancora {
+    text-decoration: none;
+    color: #000;
+  }
 
     
