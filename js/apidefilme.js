@@ -2,7 +2,7 @@
 $(window).scroll(function () {//mudar a navbar ao scrollar
 	$('nav').toggleClass('scrolled', $(this).scrollTop() > 100);
 })
-function mostrarFilme(movie) {
+function pesquisaFilme(movie) {
     const key = "1502d474"
 
     $.ajax({
@@ -21,8 +21,6 @@ function mostrarFilme(movie) {
             document.getElementById('plot').innerHTML= `Sinopse: ${dados.Plot}`;
             document.getElementById('imdbRating').innerHTML= `Avaliação IMDb: ${dados.imdbRating}`;
         },
-        error:
-        alert('Filme não disponível')
     });
 }
 
@@ -30,7 +28,7 @@ var result=$('#result');
 $('#botao-enviar').click(function (evento) {
     evento.preventDefault()
     let filme = $("#movie").val();
-    mostrarFilme (filme);
+    pesquisaFilme (filme);
     result.removeClass('some')
     
     

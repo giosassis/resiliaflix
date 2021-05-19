@@ -14,5 +14,5 @@ buttonLogin.addEventListener("click", (event) => {
 	if (!vEmail(email.value) && senha.value.length < 4) alert("email e Senha errados");
     else if(!vEmail(email.value) && senha.value.length>3) alert("Email errado");
     else if(vEmail(email.value) && senha.value.length<4) alert("Senha errada");
-    else window.open("./index.html", "_self");
+    else window.open("./paginaInicial.html", "_self");
 });
