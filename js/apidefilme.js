@@ -21,9 +21,6 @@ function pesquisaFilme(movie) {
             document.getElementById('plot').innerHTML= `Sinopse: ${dados.Plot}`;
             document.getElementById('imdbRating').innerHTML= `Avaliação IMDb: ${dados.imdbRating}`;
         },
-        error: function (request, error) {
-            alert(request.responseText);
-        }
     });
 }
 
