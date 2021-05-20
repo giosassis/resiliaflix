@@ -10,7 +10,7 @@ function pesquisaFilme(movie) {
     $.ajax({
         method: 'GET', 
         dataType: 'json',
-        url: `http://www.omdbapi.com/?apikey=${key}&t=${movie}`,
+        url: `https://www.omdbapi.com/?apikey=${key}&t=${movie}`,
         success: function(dados) {
             let result=$('#result');
            
@@ -44,4 +44,3 @@ $('#botao-enviar').click(function (evento) {
 $('#bt').click(function (evento) {
     evento.preventDefault()
     result.addClass('some')})
-   
