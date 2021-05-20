@@ -5,7 +5,7 @@ function mostrarFilme(idFilme) {
     $.ajax({
         method: 'GET', 
         dataType: 'json',
-        url: `http://www.omdbapi.com/?apikey=${key}&i=${idFilme}`,
+        url: `https://www.omdbapi.com/?apikey=${key}&i=${idFilme}`,
         success: function(dados) {
             
             

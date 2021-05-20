@@ -68,12 +68,26 @@ body {
   transform: scale(115%);
 }
 #result{
+  
+  
+    width: 50%;
     position: absolute;
     top: 100px;
-    right: auto;
+    left: 25%;
+  
     border: solid 1px black;
     
 } 
 .some{
     display: none;
+}
+.style{
+  width: 50%;
+}
+#imagemdofilme{
+  width: 50%;
+  height: 50%;
+}
+#atributos{
+  width: 50%;
 }
