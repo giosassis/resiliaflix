@@ -15,7 +15,7 @@ function pesquisaFilme(movie) {
             let result=$('#result');
            
             document.getElementById('imagemdofilme').src = dados.Poster;
-            document.getElementById('titlemovie').innerHtml = dados.Title;
+            document.getElementById('titlemovie').innerHTML = dados.Title;
             document.getElementById('director').innerHTML=`Diretor: ${dados.Director}`;
             document.getElementById('year').innerHTML=`Ano: ${dados.Year}`;
             document.getElementById('released').innerHTML=`Data de Lançamento: ${dados.Released}`;
