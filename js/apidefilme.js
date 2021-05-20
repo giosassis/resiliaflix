@@ -8,7 +8,7 @@ function pesquisaFilme(movie) {
     $.ajax({
         method: 'GET', 
         dataType: 'json',
-        url: `http://www.omdbapi.com/?apikey=${key}&t=${movie}`,
+        url: `https://www.omdbapi.com/?apikey=${key}&t=${movie}`,
         success: function(dados) {
             console.log(dados)
             document.getElementById('imagemdofilme').src = dados.Poster;
