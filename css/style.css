@@ -68,18 +68,18 @@ body {
   transform: scale(115%);
 }
 #result{
-  
-  
+    font-family: "Poppins", sans-serif;
+    font-size: small;
+    background-color: whitesmoke;
     width: 50%;
     position: absolute;
     top: 100px;
     left: 25%;
-  
     border: solid 1px black;
-    
+    padding: 10px;
 } 
 .some{
-    display: none;
+    display: inline;
 }
 .style{
   width: 50%;
