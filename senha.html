@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resiflix</title>
+    <link rel="stylesheet" href="css/senha.css">
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-light bg-transparent d-flex justify-content-between">
+            <article class="navbar-brand h1 fonte-do-texto-cabeçalho mt-1"> RESILIAFLIX</article>
+            <div class="form-inline my-2 my-lg-0">
+                <button class="btn btn-lg mr-4 rounded-0 fonte-do-texto" type="submit" data-toggle="modal" data-target="#modal-login"><a class="text-decoration-none" href="landingPage.html" id="btnVoltar">Voltar</a></button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-4 p-4">
+        <div class="align-items-center">
+            <h1>Esqueci meu Email/</h1>
+            <h1>Senha</h1>
+        </div>
+        <form>
+            <div class="m-4">
+                <p>Como você prefere redefinir sua senha?</p>
+                <input type="radio" id="remail" name="gender" value="male">
+                <label for="remail">Email</label><br>
+                <input type="radio" id="rtexto" name="gender" value="female">
+                <label for="rtexto">Mensagem de texto</label><br>
+            </div>
+            <div class="m-4">
+                <p>Enviaremos um email com instruçõesde como redefinir sua senha</p>
+
+                <div class="pInvi m-0">
+                    <p id='entregar' class="text-danger">Este Email não é válido</p>
+                </div>
+
+                <input class="rounded mb-4" type="Email" id="emailr" name="email" placeholder="Digite seu email" required>
+                <button type="submit" class="rounded" id="btn"><a class="text-decoration-none text-body" href="paginaInicial.html">Verificar</a></button>
+            </div>
+
+            <p id="p" class="text-primary m-0">Não me lembro do meu email ou telefone</p>
+        </form>
+    </div>
+    <p class="d-flex justify-content-center mt-2 text-secondary">Esta Página é protegida por Deus para garantir que você não é um robô.</p>
+    <script src="js/senha.js"></script>
+</body>
+
+</html>

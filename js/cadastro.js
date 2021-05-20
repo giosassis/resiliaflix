@@ -25,17 +25,49 @@ const Showdata = (result) => {
 }
 
 
+/* Função Validar */
+function validar() {
+    // pegando o valor do nome pelos names
+    var nome = document.getElementById("nome");
+    var email = document.getElementById("email");
+    var senha = document.getElementById("senha");
+    var confiSenha = document.getElementById("confiSenha");
+    var cep = document.getElementById("cep");
 
-var password = document.getElementById("password"),
-    confirm_password = document.getElementById("confirm_password");
-
-function validatePassword() {
-    if (password.value != confirm_password.value) {
-        confirm_password.setCustomValidity("Senhas diferentes!");
-    } else {
-        confirm_password.setCustomValidity('');
+    // verificar se o nome está vazio
+    if (nome.value == "") {
+        alert("Nome não informado");
+        nome.focus();
+        return;
     }
+    if (email.value == "") {
+        alert("E-mail não informado");
+        email.focus();
+        return;
+    }
+
+    if (senha.value == "") {
+        alert("Digite Alguma senha")
+        email.focus()
+        return
+    }
+    if (senha.value != confiSenha.value) {
+        alert("As senhas estão diferentes!")
+        confiSenha.focus()
+        return
+    }
+
+    if (cep.value == "") {
+        alert("CEP não informado");
+        cep.focus();
+        return;
+    }
+
+    window.open("paginaInicial.html", "_self")
+
 }
 
-password.onchange = validatePassword;
-confirm_password.onkeyup = validatePassword;
+$('#btn').click(function(evento) {
+    evento.preventDefault()
+    validar();
+});
