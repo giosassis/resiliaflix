@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 body {
-    background-image: url(../imagens/bodynet.png);
+    background-image: url(../imagens/bodynet.png)
+}
+
+.h1 {
+    margin-left: 10px;
 }
 
 .fonte-do-texto-cabeçalho {
@@ -13,30 +17,11 @@ body {
 #btnVoltar {
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
-}
-
-#btnVoltar:visited {
-    text-decoration: none;
     color: black;
-    font-family: "Bebas Neue", cursive;
-    font-size: 20px;
 }
 
 #hcad {
     color: #f2b544;
-}
-
-.container {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgba(20, 12, 12, 0.87);
-    margin-top: 30px;
-    width: 500px;
-    border: 1px solid;
-    border-radius: 20px;
-}
-
-.h1 {
-    margin-left: 10px;
 }
 
 .btn {
@@ -48,10 +33,32 @@ button {
     background-color: #ffc107 !important;
 }
 
-label {
-    color: #f2b544;
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f3f3;
+    margin-top: 30px;
+    width: 500px;
 }
 
-input:hover {
-    background-color: #ffc107;
+#emailr {
+    width: 400px;
+    height: 44px;
+    border: solid 1px #b3b3b3;
+}
+
+#btn {
+    width: 400px;
+    height: 48px;
+    background-color: #0080ff;
+    border: none;
+}
+
+#p {
+    cursor: pointer;
+    ;
+}
+
+.pInvi {
+    font-size: 14px;
+    visibility: hidden;
 }
