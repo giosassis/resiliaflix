@@ -12,3 +12,5 @@ O presente projeto foi desenvolvido pelos alunos:
 Giovana Assis, Marcos Paulo Cabral, Pedro Alves Cabral, Lucas Vinicius Ferreira e Patrick Oliveira. 
 
 Segue abaixo uma pré-visualização da nossa ResiliaFlix:
+<img src="https://github.com/giosassis/resiliaflix/blob/main/imagens/preview-home.png"/>
+<img src="https://github.com/giosassis/resiliaflix/blob/main/imagens/preview-index.png"/>
