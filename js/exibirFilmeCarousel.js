@@ -20,6 +20,9 @@ function mostrarFilme(idFilme) {
             document.getElementById('imdbRating').innerHTML= `Avaliação IMDb: ${dados.imdbRating}`;
             result.removeClass('some')
         },
+        error: function (request, error) {
+            alert(request.responseText);
+        }
 
     });
 }
