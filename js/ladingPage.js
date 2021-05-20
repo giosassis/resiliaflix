@@ -11,8 +11,8 @@ function vEmail(email) {
 
 buttonLogin.addEventListener("click", (event) => {
 	event.preventDefault();
-	if (!vEmail(email.value) && senha.value.length < 4) alert("email e Senha errados");
-    else if(!vEmail(email.value) && senha.value.length>3) alert("Email errado");
-    else if(vEmail(email.value) && senha.value.length<4) alert("Senha errada");
-    else window.open("./index.html", "_self");
+	if (!vEmail(email.value) && senha.value.length < 4) alert("Email e/ou senha inválidos");
+    else if(!vEmail(email.value) && senha.value.length>3) alert("Email inválido");
+    else if(vEmail(email.value) && senha.value.length<4) alert("Senha inválido");
+    else window.open("./paginaInicial.html", "_self");
 });
