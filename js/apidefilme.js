@@ -1,3 +1,4 @@
+//ano, diretor, duração, avaliação, data de estreia, sinopse, genero, atores, poster, imdb rating, metascore
 $(window).scroll(function () {//mudar a navbar ao scrollar
 	$('nav').toggleClass('scrolled', $(this).scrollTop() > 100);
 })
@@ -35,14 +36,6 @@ $('#botao-enviar').click(function (evento) {
     evento.preventDefault()
     if(filme.length>0) pesquisaFilme (filme);
     else alert("Insira um filme válido")
-   
-    
-    
- 
-});
-$('#bt').click(function (evento) {
-    evento.preventDefault()
-    result.addClass('some')})
    
     
     
